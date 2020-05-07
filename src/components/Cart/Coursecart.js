@@ -39,8 +39,8 @@ export default class Coursecart extends Component {
                                             data-item-id={node.id}
                                             data-item-name={node.title}
                                             data-item-price={node.price}
-                                            data-item-url=""
-                                            data-item-description={node.image.fixed.src} 
+                                            data-item-url="https://learncodeonline.in"
+                                            data-item-image={node.image.fixed.src} 
                                             className="btn btn-warning snipcart-add-item
                                             ">
                                             Join now
