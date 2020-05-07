@@ -1,0 +1,24 @@
+export default function Contactinfo() {
+    return (
+        <section className="py-3">
+            <Heading title="Contact us"/>
+            <div className="col-10 col-sm-8 mx-auto">
+                <form action="https://formspree.io/coolman12kumar56@gmail.com" method="POST">
+                    <div className="form-group">
+                        <input className="form-control my-2" type="text" name="name" id="name" placeholder="Your name"/>
+                    </div>
+                    <div className="form-group">
+                        <input className="form-control my-2" type="email" name="email" id="email" placeholder="Your email ID"/>
+                    </div>
+                    <div className="form-group">
+                        <input className="form-control my-2" type="text" name="phone no." id="phone no." placeholder="Phone no."/>
+                    </div>
+                    <div className="form-group">
+                        <textarea className="form-control my-2" type="text" name="description" id="description" placeholder="Tell us in brief"/>
+                    </div>
+                    <button type="submit" className="btn btn-outline-info btn-block">Submit</button>
+                </form>
+            </div>
+        </section>
+    )
+}

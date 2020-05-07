@@ -6,9 +6,10 @@ import SEO from "../components/seo"
 import Herosection from '../components/Reusable/Herosection'
 import Infoblock from '../components/Reusable/Infoblock'
 import { graphql} from 'gatsby'
-import Dualinfoblock from '../components/Reusable/Dualinfoblock'
+//import Dualinfoblock from '../components/Reusable/Dualinfoblock'
+import Contactinfo from '../components/Contact/Contactinfo'
 
-const IndexPage = ({data}) => (
+const ContactPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Herosection
@@ -17,9 +18,8 @@ const IndexPage = ({data}) => (
       subtitle="24 Hrs assistance provided!"
       heroclass="hero-background"
     />
-    <Infoblock heading="Contact us"/>
-    <Dualinfoblock
-     heading="Our team"/>
+    <Infoblock heading="How can we help?"/>
+    <Contactinfo/>
   </Layout>
 )
 
@@ -34,4 +34,4 @@ export const query =graphql`
       }
   }
 `
-export default IndexPage
+export default ContactPage
